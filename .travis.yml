@@ -1,0 +1,11 @@
+sudo: required
+
+language: ruby
+
+services:
+    - docker
+
+before_install:
+    - docker pull nogsantos/nodejs    
+    - docker ps -a
+    - docker run nogsantos/nodejs
