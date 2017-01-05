@@ -1,5 +1,7 @@
 # Node JS v7.3.0
 
+[![Build Status](https://travis-ci.org/nogsantos/nodejs.svg?branch=master)](https://travis-ci.org/nogsantos/nodejs)
+
 Build node v7x in my ubuntu base image [nogsantos/ubuntu](https://github.com/nogsantos/ubuntu) with extra packages.
 
 - `nodejs`

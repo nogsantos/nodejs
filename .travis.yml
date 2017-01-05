@@ -7,5 +7,6 @@ services:
 
 before_install:
     - docker pull nogsantos/nodejs    
+    - docker run -itd --name nodesantos nogsantos/nodejs
     - docker ps -a
-    - docker run nogsantos/nodejs
+    - docker rm -f /nodesantos
