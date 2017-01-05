@@ -1,4 +1,15 @@
 sudo: required
 
+language: ruby
+
 services:
     - docker
+
+before_install:
+    - docker pull nogsantos/nodejs    
+    - docker run -itd --name nodesantos nogsantos/nodejs
+    - docker ps -a
+    - docker rm -f /nodesantos
+
+script:
+    - bundle exec rake test
